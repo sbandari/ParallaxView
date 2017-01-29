@@ -1,0 +1,510 @@
+/* ============================================================
+  CSS RESET
+============================================================ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ============================================================
+  PRIMARY NAVIGATION
+============================================================ */
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    float: left;
+    height: auto;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#menu-icon {
+    display: none;
+    height: 40px;
+    width: 40px;
+    background-color: dimgray;
+    background-image: url(images/menu_icon-03.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a:hover#menu-icon {
+    background-color: lightgray;
+    border-radius: 10px 10px 0 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    background-color: none;
+}
+
+nav li {
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+
+nav li a {
+    color: white;
+    display: block;
+    font-family: sans-serif;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: gray;
+}
+
+
+/* ============================================================
+   PRIMARY SOCIAL MEDIA
+============================================================ */
+
+#social {
+    display: inline;
+    float: right;
+    height: 100px;
+    position: fixed;
+    right: 5px;
+    top: 100px;
+    width: auto;
+    z-index: 1;
+}
+
+
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+/* ============================================================
+  PRIMARY SECTIONS
+============================================================ */
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-family: "roboto slab", serif;
+    font-size: 30px;
+}
+
+section.module p {
+    margin-bottom: 40px;
+    font font-size: 16px;
+    font-weight: 300;
+}
+
+section.module p:last-child {
+    margin-bottom: 0;
+}
+
+section.module.content {
+    padding: 40px 0;
+}
+
+section.module.parallax {
+    height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallax h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 100px;
+    line-height: 600px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.module.parallax-1 {
+    background-image: url(images/1.jpg);
+}
+
+section.module.parallax-2 {
+    background-image: url(images/2.jpg);
+}
+
+section.module.parallax-3 {
+    background-image: url(images/3.jpg);
+}
+
+
+/* ============================================================
+  PRIMARY FOOTER
+============================================================ */
+
+footer {
+    float: left;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+footer p {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.scrollup {
+    background-color: gray;
+    background-image: url("images/uparrows-03.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    border-radius: 50px;
+    display: none;
+    bottom: 20px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    text-indent: -9999px;
+    width: 50px;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media all and (max-width: 960px) {
+    /* ============================================================
+  MOBILE NAVIGATION
+============================================================ */
+    #menu-icon {
+        display: block;
+        float: right;
+    }
+    nav {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: auto;
+        padding-bottom: 0;
+        padding-top: 0;
+        width: 100%;
+    }
+    nav a {
+        color: white;
+        display: block;
+        width: 100%;
+    }
+    nav li {
+        background-color: #ffffff;
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+    nav li a {
+        color: darkgray;
+    }
+    nav ul,
+    nav:active ul {
+        background-color: #ffffff;
+        border-radius: 4px 4px 4px 4px;
+        display: none;
+        padding: 0;
+        width: 100%;
+    }
+    nav:hover ul {
+        color: white;
+        display: block;
+        width: 100%;
+    }
+    /* ============================================================
+MOBILE SOCIAL
+============================================================ */
+    #social {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: block;
+        float: right;
+        height: auto;
+        position: fixed;
+        right: 5px;
+        top: 175px;
+        width: 50px;
+    }
+    /* ============================================================
+MOBILE STRUCTURE
+============================================================ */
+    section.module.parallax h1 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 150px;
+        text-align: center;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+    }
+    section.module.content {
+        padding: 20px;
+    }
+    section.module.parallax {
+        background-attachment: fixed;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        height: 300px;
+        background-size: canvas;
+    }
+}
